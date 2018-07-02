@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JournalApp</string>
+    <string name="get_started">Get Started</string>
+    <string name="the_diary">The Diary</string>
+    <string name="record">Save Record</string>
+    <string name="title">TITLE</string>
+</resources>

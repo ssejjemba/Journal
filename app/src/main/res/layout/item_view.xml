@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/event" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGray"
+            android:fontFamily="@font/leo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Retirement" />
+
+        <TextView
+            android:id="@+id/item_content"
+            android:layout_width="203dp"
+            android:layout_height="48dp"
+            android:layout_alignStart="@+id/item_date"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-12dp"
+            android:maxLength="100"
+            android:textColor="@color/colorLightGray"
+            android:fontFamily="@font/respective"
+            android:textSize="16sp"
+            tools:text="Content goes here ........." />
+
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="107dp"
+            android:textColor="@color/colorGray"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Thursday, 29, Jul" />
+
+        <ImageButton
+            android:id="@+id/ib_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/delete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
